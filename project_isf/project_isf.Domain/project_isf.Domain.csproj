@@ -46,12 +46,10 @@
     <Compile Include="POCO\Event.cs" />
     <Compile Include="POCO\ISFRepresentative.cs" />
     <Compile Include="POCO\Location.cs" />
-    <Compile Include="POCO\Meeting.cs" />
     <Compile Include="POCO\MeetingEvent.cs" />
     <Compile Include="POCO\NSF.cs" />
     <Compile Include="POCO\NSFRepresentative.cs" />
-    <Compile Include="POCO\School.cs" />
-    <Compile Include="POCO\SchoolCupCoordinator.cs" />
+    <Compile Include="POCO\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
