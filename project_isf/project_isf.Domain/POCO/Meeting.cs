@@ -12,9 +12,9 @@ namespace project_isf.Domain.POCO
     public int MeetingEventId { get; set; }
     public int EnrollmentId { get; set; }
     public int RepresentativeId { get; set; }
-    public string StartTime { get; set; }
-    public string EndTime { get; set; }
-    public string Date { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+    public DateTime Date { get; set; }
     public string Adress { get; set; }
 
     public virtual MeetingEvent MeetingEvent { get; set; }
