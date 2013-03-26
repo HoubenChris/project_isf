@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  class MeetingEvent
+  public class MeetingEvent
   {
     public int MeetingEventId { get; set; }
-    public int eventId { get; set; }
-    public int meetingId { get; set; }
+    public int EventId { get; set; }
+    public int MeetingId { get; set; }
 
-    
+    public virtual Event Event { get; set; }
+    public virtual Meeting Meeting { get; set; }
   }
 }
