@@ -11,10 +11,10 @@ namespace project_isf.Domain.POCO
     public int SchoolId { get; set; }
     public string Name { get; set; }
     public string Adress { get; set; }
-    public int NSFRepresentativeId { get; set; }
+    public int NSFId { get; set; }
     public int LocationId { get; set; }
 
-    public virtual NSFRepresentative NSFRepresentative { get; set; }
+    public virtual NSF NSF { get; set; }
     public virtual Location Location { get; set; }
   }
 }
