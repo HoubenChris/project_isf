@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  class Coach
+  public class Coach
   {
     public int CoachId { get; set; }
     public string Name { get; set; }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  class Location
+  public class Location
   {
+    public int LocationId { get; set; }
+    public string Continent { get; set; }
+    public string Country { get; set; }
+    public string Region { get; set; }
   }
 }
