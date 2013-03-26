@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  public class SchoolCupCoordinator
+  public class Student
   {
-    public int SccId { get; set; }
+    public int StudentId { get; set; }
+    public int TeamId { get; set; }
     public string Name { get; set; }
     public string FirstName { get; set; }
     public string Adress { get; set; }
+    public DateTime DateOfBirth { get; set; }
     public int LocationId { get; set; }
-    public int SchoolId { get; set; }
 
+    public virtual Team Team { get; set; }
     public virtual Location Location { get; set; }
-    public virtual School School { get; set; }
-
   }
 }

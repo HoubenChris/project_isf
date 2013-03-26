@@ -20,6 +20,5 @@ namespace project_isf.Domain.POCO
     public virtual MeetingEvent MeetingEvent { get; set; }
     public virtual Enrollment Enrollment { get; set; }
     public virtual NSFRepresentative NSFRepresentative { get; set; }
-
   }
 }
