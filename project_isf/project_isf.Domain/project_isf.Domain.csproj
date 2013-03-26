@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="POCO\Advertisement.cs" />
+    <Compile Include="POCO\AdvertisementLocation.cs" />
     <Compile Include="POCO\Coach.cs" />
     <Compile Include="POCO\Event.cs" />
     <Compile Include="POCO\ISFRepresentative.cs" />
