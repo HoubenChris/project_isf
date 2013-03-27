@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-    class Team
+    public class Team
     {
         public int TeamId { get; set; }
         public int CategoryId { get; set; }

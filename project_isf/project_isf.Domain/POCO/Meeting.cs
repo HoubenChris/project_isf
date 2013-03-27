@@ -17,7 +17,7 @@ namespace project_isf.Domain.POCO
     public DateTime Date { get; set; }
     public string Adress { get; set; }
 
-    public virtual MeetingEvent MeetingEvent { get; set; }
+    public List<MeetingEvent> MeetingEvents { get; set; }
     public virtual Enrollment Enrollment { get; set; }
     public virtual NSFRepresentative NSFRepresentative { get; set; }
   }
