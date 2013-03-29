@@ -1,0 +1,45 @@
+﻿@model project_isf.Domain.POCO.MeetingEvent
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>MeetingEvent</legend>
+
+        @Html.HiddenFor(model => model.MeetingEventId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EventId, "Event")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("EventId", String.Empty)
+            @Html.ValidationMessageFor(model => model.EventId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MeetingId, "Meeting")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("MeetingId", String.Empty)
+            @Html.ValidationMessageFor(model => model.MeetingId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
