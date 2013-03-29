@@ -14,6 +14,7 @@ namespace project_isf.Domain.POCO
         public int SchoolId { get; set; }
         public string TeamNaam { get; set; }
         public Boolean Category { get; set; }
+        public string ImageUrl { get; set; }
 
         public virtual Coach Coach { get; set; }
         public virtual School School { get; set; }

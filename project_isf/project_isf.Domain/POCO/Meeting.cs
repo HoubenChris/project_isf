@@ -10,7 +10,7 @@ namespace project_isf.Domain.POCO
   {
     public int MeetingId { get; set; }
     public int MeetingEventId { get; set; }
-    public int EnrollmentId { get; set; }
+    //public int EnrollmentId { get; set; }
     public int RepresentativeId { get; set; }
     public DateTime StartTime { get; set; }
     public DateTime EndTime { get; set; }
@@ -18,7 +18,8 @@ namespace project_isf.Domain.POCO
     public string Adress { get; set; }
 
     public List<MeetingEvent> MeetingEvents { get; set; }
-    public virtual Enrollment Enrollment { get; set; }
+    public List<Team> Teams { get; set; }
+    //public virtual Enrollment Enrollment { get; set; }
     public virtual NSFRepresentative NSFRepresentative { get; set; }
   }
 }

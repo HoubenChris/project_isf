@@ -1,0 +1,83 @@
+﻿@model project_isf.Domain.POCO.Meeting
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Meeting</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MeetingEventId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MeetingEventId)
+            @Html.ValidationMessageFor(model => model.MeetingEventId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EnrollmentId, "Enrollment")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("EnrollmentId", String.Empty)
+            @Html.ValidationMessageFor(model => model.EnrollmentId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RepresentativeId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RepresentativeId)
+            @Html.ValidationMessageFor(model => model.RepresentativeId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StartTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StartTime)
+            @Html.ValidationMessageFor(model => model.StartTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EndTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EndTime)
+            @Html.ValidationMessageFor(model => model.EndTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Adress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Adress)
+            @Html.ValidationMessageFor(model => model.Adress)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

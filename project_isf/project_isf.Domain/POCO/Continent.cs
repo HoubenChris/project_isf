@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  public class NSF
+  public class Continent
   {
-    public int NSFId { get; set; }
-    public string RegionId { get; set; }
-    public virtual Region Region { get; set; }
+    public int ContinentId { get; set; }
+    public string Name { get; set; }
+    
   }
 }

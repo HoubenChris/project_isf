@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace project_isf.Domain.POCO
 {
   public class ISFRepresentative
   {
-    public int RepresentativeId { get; set; }
+    public int ISFRepresentativeId { get; set; }
     public string Name { get; set; }
     public string FirstName { get; set; }
-    public string Adress { get; set; }
-    public int LocationId { get; set; }
+    public string Address { get; set; }
+    public int RegionId { get; set; }
 
-    public virtual Location Location { get; set; }
+    public virtual Region Region { get; set; }
   }
 }

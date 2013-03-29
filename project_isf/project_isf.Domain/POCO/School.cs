@@ -12,9 +12,9 @@ namespace project_isf.Domain.POCO
     public string Name { get; set; }
     public string Adress { get; set; }
     public int NSFId { get; set; }
-    public int LocationId { get; set; }
+    //public int RegionId { get; set; }
 
     public virtual NSF NSF { get; set; }
-    public virtual Location Location { get; set; }
+    //public virtual Region Region { get; set; }
   }
 }

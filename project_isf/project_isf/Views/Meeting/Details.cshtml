@@ -1,0 +1,64 @@
+﻿@model project_isf.Domain.POCO.Meeting
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Meeting</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MeetingEventId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MeetingEventId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Enrollment.EnrollmentId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Enrollment.EnrollmentId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RepresentativeId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RepresentativeId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EndTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EndTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Adress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Adress)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.MeetingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
