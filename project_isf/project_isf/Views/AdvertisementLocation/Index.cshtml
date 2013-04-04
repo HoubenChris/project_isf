@@ -1,0 +1,39 @@
+﻿@model IEnumerable<project_isf.Domain.POCO.AdvertisementLocation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Country.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Advertisement.Company)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Advertisement.Company)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AdvertisementLocationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AdvertisementLocationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AdvertisementLocationId })
+        </td>
+    </tr>
+}
+
+</table>

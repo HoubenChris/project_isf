@@ -1,0 +1,69 @@
+﻿@model project_isf.Domain.POCO.SchoolCupCoordinator
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SchoolCupCoordinator</legend>
+
+        @Html.HiddenFor(model => model.SchoolCupCoordinatorId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Adress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Adress)
+            @Html.ValidationMessageFor(model => model.Adress)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RegionId, "Region")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("RegionId", String.Empty)
+            @Html.ValidationMessageFor(model => model.RegionId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SchoolId, "School")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("SchoolId", String.Empty)
+            @Html.ValidationMessageFor(model => model.SchoolId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

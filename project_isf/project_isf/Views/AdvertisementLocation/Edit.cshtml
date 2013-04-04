@@ -1,0 +1,45 @@
+﻿@model project_isf.Domain.POCO.AdvertisementLocation
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>AdvertisementLocation</legend>
+
+        @Html.HiddenFor(model => model.AdvertisementLocationId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CountryId, "Country")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CountryId", String.Empty)
+            @Html.ValidationMessageFor(model => model.CountryId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdvertisementId, "Advertisement")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("AdvertisementId", String.Empty)
+            @Html.ValidationMessageFor(model => model.AdvertisementId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

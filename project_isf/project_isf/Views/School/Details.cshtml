@@ -1,0 +1,36 @@
+﻿@model project_isf.Domain.POCO.School
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>School</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Adress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Adress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NSF.RegionId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NSF.RegionId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SchoolId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

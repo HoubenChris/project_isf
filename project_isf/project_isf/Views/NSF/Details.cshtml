@@ -1,0 +1,22 @@
+﻿@model project_isf.Domain.POCO.NSF
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>NSF</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RegionId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RegionId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.NSFId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

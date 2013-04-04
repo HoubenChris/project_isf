@@ -6,7 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-
+using System.Data.Entity;
 namespace project_isf
 {
   // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -23,6 +23,9 @@ namespace project_isf
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
       AuthConfig.RegisterAuth();
+
+      Database.SetInitializer<DbContext>(new DropCreateDatabaseIfModelChanges<DbContext>());
+
     }
   }
 }

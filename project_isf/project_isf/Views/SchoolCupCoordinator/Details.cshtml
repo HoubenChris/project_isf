@@ -1,0 +1,50 @@
+﻿@model project_isf.Domain.POCO.SchoolCupCoordinator
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SchoolCupCoordinator</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Adress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Adress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Region.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Region.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.School.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.School.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SchoolCupCoordinatorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

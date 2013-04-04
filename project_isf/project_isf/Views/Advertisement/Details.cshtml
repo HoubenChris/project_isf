@@ -1,0 +1,36 @@
+﻿@model project_isf.Domain.POCO.Advertisement
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Advertisement</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Company)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Company)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdvertisementLocationId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdvertisementLocationId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImageUrl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImageUrl)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AdvertisementId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
