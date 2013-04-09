@@ -1,0 +1,109 @@
+﻿@model project_isf.Domain.POCO.Event
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Event</legend>
+
+        @Html.HiddenFor(model => model.EventId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Category)
+            @Html.ValidationMessageFor(model => model.Category)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TimeOrDistance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TimeOrDistance)
+            @Html.ValidationMessageFor(model => model.TimeOrDistance)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SchoolCupEvent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SchoolCupEvent)
+            @Html.ValidationMessageFor(model => model.SchoolCupEvent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TimeMinimum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TimeMinimum)
+            @Html.ValidationMessageFor(model => model.TimeMinimum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TimeMaximum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TimeMaximum)
+            @Html.ValidationMessageFor(model => model.TimeMaximum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DistanceMinimum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DistanceMinimum)
+            @Html.ValidationMessageFor(model => model.DistanceMinimum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DistanceMaximum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DistanceMaximum)
+            @Html.ValidationMessageFor(model => model.DistanceMaximum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RecordHolder)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RecordHolder)
+            @Html.ValidationMessageFor(model => model.RecordHolder)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

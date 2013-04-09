@@ -1,0 +1,85 @@
+﻿@model project_isf.Domain.POCO.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Event</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeOrDistance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeOrDistance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SchoolCupEvent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SchoolCupEvent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeMinimum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeMinimum)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeMaximum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeMaximum)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DistanceMinimum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DistanceMinimum)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DistanceMaximum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DistanceMaximum)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RecordHolder)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordHolder)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EventId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
