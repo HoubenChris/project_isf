@@ -11,6 +11,12 @@ namespace project_isf.Domain.Concrete
 {
     public class EFDbContext: DbContext
     {
+
+        public EFDbContext()
+            : base("ProjectISFDb")
+        {
+        }
+
         public DbSet<Advertisement> Advertisements { get; set; }
         public DbSet<AdvertisementLocation> AdvertisementLocations { get; set; }
         public DbSet<Coach> Coaches { get; set; }
