@@ -1,4 +1,4 @@
-﻿@model IEnumerable<project_isf.Domain.POCO.Event>
+﻿@model IEnumerable<project_isf.Domain.POCO.ISFEvent>
 
 @{
     ViewBag.Title = "Index";
@@ -77,9 +77,9 @@
             @Html.DisplayFor(modelItem => item.RecordHolder)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EventId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EventId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EventId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.ISFEventId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ISFEventId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ISFEventId })
         </td>
     </tr>
 }

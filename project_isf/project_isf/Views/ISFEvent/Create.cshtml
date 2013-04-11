@@ -1,18 +1,16 @@
-﻿@model project_isf.Domain.POCO.Event
+﻿@model project_isf.Domain.POCO.ISFEvent
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Create";
 }
 
-<h2>Edit</h2>
+<h2>Create</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Event</legend>
-
-        @Html.HiddenFor(model => model.EventId)
+        <legend>ISFEvent</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)
@@ -95,7 +93,7 @@
         </div>
 
         <p>
-            <input type="submit" value="Save" />
+            <input type="submit" value="Create" />
         </p>
     </fieldset>
 }

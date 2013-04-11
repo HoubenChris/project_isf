@@ -50,7 +50,7 @@
     <Compile Include="POCO\AdvertisementLocation.cs" />
     <Compile Include="POCO\Coach.cs" />
     <Compile Include="POCO\Continent.cs" />
-    <Compile Include="POCO\Event.cs" />
+    <Compile Include="POCO\ISFEvent.cs" />
     <Compile Include="POCO\ISFRepresentative.cs" />
     <Compile Include="POCO\Country.cs" />
     <Compile Include="POCO\Meeting.cs" />

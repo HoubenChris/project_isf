@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace project_isf.Domain.POCO
 {
-  public class Event
+  public class ISFEvent
   {
-    public int EventId { get; set; }
+    public int ISFEventId { get; set; }
     public string Name { get; set; }
     public Boolean Category { get; set; } // TO DO: enum van maken
     public Boolean TimeOrDistance { get; set; }

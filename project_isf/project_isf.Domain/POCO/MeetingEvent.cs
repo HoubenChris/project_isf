@@ -12,7 +12,7 @@ namespace project_isf.Domain.POCO
     public int EventId { get; set; }
     public int MeetingId { get; set; }
 
-    public virtual Event Event { get; set; }
+    public virtual ISFEvent Event { get; set; }
     public virtual Meeting Meeting { get; set; }
   }
 }

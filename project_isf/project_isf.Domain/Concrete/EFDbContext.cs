@@ -21,7 +21,7 @@ namespace project_isf.Domain.Concrete
         public DbSet<AdvertisementLocation> AdvertisementLocations { get; set; }
         public DbSet<Coach> Coaches { get; set; }
         //public DbSet<Enrollment> Enrollments { get; set; }
-        public DbSet<Event> Events { get; set; }
+        public DbSet<ISFEvent> Events { get; set; }
         public DbSet<ISFRepresentative> ISFRepresantives { get; set; }
         public DbSet<Continent> Continents { get; set; }
         public DbSet<Country> Countries { get; set; }
