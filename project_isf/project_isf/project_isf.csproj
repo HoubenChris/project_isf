@@ -296,11 +296,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Meeting\Index.cshtml" />
-    <Content Include="Views\Meeting\Details.cshtml" />
-    <Content Include="Views\Meeting\Create.cshtml" />
-    <Content Include="Views\Meeting\Edit.cshtml" />
-    <Content Include="Views\Meeting\Delete.cshtml" />
     <Content Include="Views\Enrollment\Index.cshtml" />
     <Content Include="Views\Enrollment\Details.cshtml" />
     <Content Include="Views\Enrollment\Create.cshtml" />
@@ -376,6 +371,11 @@
     <Content Include="Views\ISFEvent\Create.cshtml" />
     <Content Include="Views\ISFEvent\Edit.cshtml" />
     <Content Include="Views\ISFEvent\Delete.cshtml" />
+    <Content Include="Views\Meeting\Index.cshtml" />
+    <Content Include="Views\Meeting\Details.cshtml" />
+    <Content Include="Views\Meeting\Create.cshtml" />
+    <Content Include="Views\Meeting\Edit.cshtml" />
+    <Content Include="Views\Meeting\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
