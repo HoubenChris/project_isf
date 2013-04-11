@@ -166,7 +166,6 @@
     <Compile Include="Controllers\AdvertisementLocationController.cs" />
     <Compile Include="Controllers\CoachController.cs" />
     <Compile Include="Controllers\ContinentController.cs" />
-    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ISFRepresentativeController.cs" />
     <Compile Include="Controllers\MeetingController.cs" />
