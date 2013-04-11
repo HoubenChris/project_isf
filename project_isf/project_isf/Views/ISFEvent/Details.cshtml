@@ -20,14 +20,24 @@
          @Html.DisplayNameFor(model => model.Category)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Category)
+         @if (Model.Category == true)
+            {
+                @Html.Label("Athletics")
+            }else{
+                @Html.Label("Swimming") 
+            }
     </div>
 
     <div class="display-label">
          @Html.DisplayNameFor(model => model.TimeOrDistance)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.TimeOrDistance)
+         @if (Model.TimeOrDistance == true)
+            {
+                @Html.Label("Time")
+            }else{
+                @Html.Label("Distance") 
+            }
     </div>
 
     <div class="display-label">

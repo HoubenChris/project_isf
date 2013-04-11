@@ -10,7 +10,7 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>ISFEvent</legend>
+        <legend>Event</legend>
 
         @Html.HiddenFor(model => model.ISFEventId)
 
@@ -23,23 +23,23 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Category)
+           @Html.Label("Type")
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Category)
-            @Html.ValidationMessageFor(model => model.Category)
+            @Html.RadioButtonFor(model => model.Category,true) Athletics
+            @Html.RadioButtonFor(model => model.Category,false) Swimming
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.TimeOrDistance)
+            @Html.Label("Time or distance")
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.TimeOrDistance)
-            @Html.ValidationMessageFor(model => model.TimeOrDistance)
+            @Html.RadioButtonFor(model => model.TimeOrDistance,true) Time
+            @Html.RadioButtonFor(model => model.TimeOrDistance,false) Distance
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.SchoolCupEvent)
+           @Html.Label("School Cup Event")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.SchoolCupEvent)
@@ -47,7 +47,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.TimeMinimum)
+           @Html.Label("Time minimum")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.TimeMinimum)
@@ -55,7 +55,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.TimeMaximum)
+           @Html.Label("Time maximum")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.TimeMaximum)
@@ -63,7 +63,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.DistanceMinimum)
+            @Html.Label("Distance minimum")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.DistanceMinimum)
@@ -71,7 +71,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.DistanceMaximum)
+           @Html.Label("Distance maximum")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.DistanceMaximum)

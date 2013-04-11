@@ -167,6 +167,7 @@
     <Compile Include="Controllers\CoachController.cs" />
     <Compile Include="Controllers\ContinentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ISFEventController.cs" />
     <Compile Include="Controllers\ISFRepresentativeController.cs" />
     <Compile Include="Controllers\MeetingController.cs" />
     <Compile Include="Controllers\MeetingEventController.cs" />
@@ -370,6 +371,11 @@
     <Content Include="Views\Team\Create.cshtml" />
     <Content Include="Views\Team\Edit.cshtml" />
     <Content Include="Views\Team\Delete.cshtml" />
+    <Content Include="Views\ISFEvent\Index.cshtml" />
+    <Content Include="Views\ISFEvent\Details.cshtml" />
+    <Content Include="Views\ISFEvent\Create.cshtml" />
+    <Content Include="Views\ISFEvent\Edit.cshtml" />
+    <Content Include="Views\ISFEvent\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

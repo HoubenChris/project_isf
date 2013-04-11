@@ -13,8 +13,8 @@ namespace project_isf.Domain.POCO
     public Boolean Category { get; set; } // TO DO: enum van maken
     public Boolean TimeOrDistance { get; set; }
     public Boolean SchoolCupEvent { get; set; }
-    public DateTime TimeMinimum { get; set; }
-    public DateTime TimeMaximum { get; set; }
+    public int TimeMinimum { get; set; } //in seconden
+    public int TimeMaximum { get; set; } //in seconden
     public int DistanceMinimum { get; set; }
     public int DistanceMaximum { get; set; }
     public string Description { get; set; }

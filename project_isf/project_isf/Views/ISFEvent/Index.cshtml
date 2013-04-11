@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<project_isf.Domain.POCO.ISFEvent>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Events";
 }
 
 <h2>Index</h2>
@@ -12,69 +12,45 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.Label("Name")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Category)
+            @Html.Label("Type")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TimeOrDistance)
+             @Html.Label("Time or distance")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SchoolCupEvent)
+             @Html.Label("School Cup")
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TimeMinimum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TimeMaximum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DistanceMinimum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DistanceMaximum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RecordHolder)
-        </th>
+        
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
+            
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Category)
+            @if (item.Category == true)
+            {
+                @Html.Label("Athletics")
+            }else{
+                @Html.Label("Swimming") 
+            }
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TimeOrDistance)
+            @if (item.TimeOrDistance == true)
+            {
+                @Html.Label("Time")
+            }else{
+                @Html.Label("Distance") 
+            }
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.SchoolCupEvent)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TimeMinimum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TimeMaximum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DistanceMinimum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DistanceMaximum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RecordHolder)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ISFEventId }) |
