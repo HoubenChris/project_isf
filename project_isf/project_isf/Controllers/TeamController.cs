@@ -52,6 +52,7 @@ namespace project_isf.Controllers
         [HttpPost]
         public ActionResult Create(Team team)
         {
+
             if (ModelState.IsValid)
             {
                 db.Teams.Add(team);
@@ -61,6 +62,9 @@ namespace project_isf.Controllers
 
             ViewBag.CoachId = new SelectList(db.Coaches, "CoachId", "Name", team.CoachId);
             ViewBag.SchoolId = new SelectList(db.Schools, "SchoolId", "Name", team.SchoolId);
+
+            List<Student> students = new List<Student>();
+            team.Students = students;
             return View(team);
         }
 

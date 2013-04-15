@@ -18,6 +18,7 @@ namespace project_isf.Domain.POCO
 
         public virtual Coach Coach { get; set; }
         public virtual School School { get; set; }
+        public List<Student> Students { get; set; }
 
     }
 }
